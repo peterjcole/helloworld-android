@@ -2,4 +2,8 @@
     <string name="app_name">HelloWorld</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_key">Send</string>
+    <string name="radio_1">Red</string>
+    <string name="radio_2">Green</string>
+    <string name="radio_3">Blue</string>
+    <string name="subheading_1">CHOOSE A COLOUR</string>
 </resources>
