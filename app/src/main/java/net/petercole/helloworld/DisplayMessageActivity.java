@@ -21,14 +21,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView);
         textView.setText(message);
 
-        if (colour.equals("Red")) {
-            textView.setTextColor(Color.RED);
-        } else if (colour.equals("Green")) {
-            textView.setTextColor(Color.GREEN);
-        } else if (colour.equals("Blue")) {
-            textView.setTextColor(Color.BLUE);
-        } else {
-            textView.setText(colour);
-        }
+        textView.setTextColor(Color.parseColor(colour));
+
     }
 }

@@ -25,14 +25,13 @@ public class MainActivity extends AppCompatActivity {
     //called when user taps send button
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
+        EditText editText = findViewById(R.id.editText);
         String message = editText.getText().toString();
-//        String colour =
         intent.putExtra(EXTRA_MESSAGE, message);
 
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.colourGroup);
+        RadioGroup radioGroup = findViewById(R.id.colourGroup);
         int selectedID = radioGroup.getCheckedRadioButtonId();
-        RadioButton radioButton = (RadioButton) findViewById(selectedID);
+        RadioButton radioButton = findViewById(selectedID);
         String text = radioButton.getText().toString();
         intent.putExtra(RADIO_CHOSEN, text);
 
