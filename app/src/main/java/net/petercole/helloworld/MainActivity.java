@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "net.petercole.helloworld.MESSAGE";
     public static final String RADIO_CHOSEN = "net.petercole.helloworld.RADIO_CHOSEN";
-
+    static final int MESSAGE_PRESET_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
         String text = radioButton.getText().toString();
         intent.putExtra(RADIO_CHOSEN, text);
 
-        startActivity(intent);
+        startActivityForResult(intent, MESSAGE_PRESET_REQUEST);
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == MESSAGE_PRESET_REQUEST) {
+            if(resultCode == RESULT_OK) {
+                EditText editText = findViewById(R.id.editText);
+                String presetMessage = data.getStringExtra(DisplayMessageActivity.PRESET_MESSAGE);
+                editText.setText(presetMessage);
+            }
+        }
     }
 }

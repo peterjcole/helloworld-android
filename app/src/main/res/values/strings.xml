@@ -6,4 +6,14 @@
     <string name="radio_2">Green</string>
     <string name="radio_3">Blue</string>
     <string name="subheading_1">CHOOSE A COLOUR</string>
+    <string-array name="example_messages_array">
+        <item>They\'re taking the hobbits to Isengard</item>
+        <item>Salted pork</item>
+        <item>What do your elf eyes see</item>
+        <item>You have my sword</item>
+        <item>One can not simply walk into Mordor</item>
+        <item>You shall not pass</item>
+    </string-array>
+    <string name="display_message_subheading">CHOOSE YOUR NEXT MESSAGE</string>
+    <string name="display_message_button">Save</string>
 </resources>
