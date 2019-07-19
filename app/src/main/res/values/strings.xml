@@ -14,6 +14,8 @@
         <item>One can not simply walk into Mordor</item>
         <item>You shall not pass</item>
     </string-array>
-    <string name="display_message_subheading">CHOOSE YOUR NEXT MESSAGE</string>
+    <string name="display_message_subheading">Choose your next message</string>
     <string name="display_message_button">Save</string>
+    <string name="share_button">Share</string>
+
 </resources>
